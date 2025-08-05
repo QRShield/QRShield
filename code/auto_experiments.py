@@ -216,15 +216,12 @@ if __name__ == "__main__":
     args = parse_args()
     experiments_base_path = "../experiments/"
 
-    # 确保 experiments 目录存在
     os.makedirs(experiments_base_path, exist_ok=True)
 
     for exp_name in args.experiments_names:
-        # 拼接当前实验的路径
         experiments_path = os.path.join(experiments_base_path, f"{exp_name}.json")
 
         print(f"\n{YELLOW}===== Running experiment: {exp_name} ====={RESET}")
         print(f"{YELLOW}Saving/loading experiment record at: {experiments_path}{RESET}")
 
-        # 运行 main()，传入当前 experiment 的 path
         main(args=args, experiments_path=experiments_path, experiments_name = exp_name)
