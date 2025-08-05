@@ -1,4 +1,4 @@
-# How to Run Full U-Net Fine-tune
+# How to Run
 
 1. Download the pretrained model from:  
    https://huggingface.co/stabilityai/stable-diffusion-2-1-base  
