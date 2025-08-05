@@ -51,3 +51,8 @@ The fine-tuned model will generate images saved to:
 `data/generated_images/textual_inversion/`
 You can check the output images to evaluate the results.
 The corresponding evaluation metrics will be saved in the `result` folder, which you can also review.
+
+# Note 
+
+1. `ff_test` and `dl_ti_test` are command collections located in the `experiment` folder.  
+If you need more flexible execution or want to customize experiment settings, you can modify these files accordingly.
