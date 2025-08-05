@@ -15,4 +15,5 @@ tqdm==4.66.2
 transformers==4.39.1
 accelerate==0.28.0
 xformers==0.0.25
+pytorch_msssim
 
