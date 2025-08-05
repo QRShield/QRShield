@@ -4,12 +4,16 @@
    https://huggingface.co/stabilityai/stable-diffusion-2-1-base  
    Place the downloaded files in the `data/pre_model` directory.
 
-2. Install the required environment:  
+2. Download the clip model from:  
+   https://huggingface.co/openai/clip-vit-base-patch32  
+   Place the downloaded files in the `data/CLIP` directory.
+
+3. Install the required environment:  
    Open a terminal in the `code` directory and run:  
    ```bash
    pip install -r requirements.txt
 
-3. Run the experiment:
+4. Run the experiment:
 In the code directory, execute:
    ```bash
    python3 auto_experiments.py --experiments_name=test
@@ -21,25 +25,21 @@ You can check the output images to evaluate the results.
 
 # How to Run LoRA + Dreambooth and Textual Inversion
 
-1. Download the pretrained model from:  
-   https://huggingface.co/stabilityai/stable-diffusion-2-1-base  
-   Place the downloaded files in the `data/pre_model` directory.
-
-2. Create and activate the environment:
+1. Create and activate the environment:
    ```bash
    conda create -n dreambooth39 python=3.9 -y
    conda activate dreambooth39
 
-3. Install diffusers from source in the environment:  
+2. Install diffusers from source in the environment:  
    ```bash
    pip install git+https://github.com/huggingface/diffusers.git
 
-4. Install the required environment:  
+3. Install the required environment:  
    Open a terminal in the `code` directory and run:  
    ```bash
    pip install -r requirements.txt
 
-5. Run the experiment:
+4. Run the experiment:
 In the code directory, execute:
    ```bash
    python3 auto_experiments.py --experiments_name=test
